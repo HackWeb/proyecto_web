@@ -1,3 +1,5 @@
+#encoding:utf-8
+
 """
 Django settings for website project.
 
@@ -26,6 +28,10 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#Administradores
+ADMINS = (
+    ('Emanuel GP', 'emanuel_gp@hotmail.com'),
+)
 
 # Application definition
 
@@ -36,6 +42,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'principal',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -65,7 +72,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-Mx'
 
 TIME_ZONE = 'UTC'
 
